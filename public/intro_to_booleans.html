@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Introduction to Booleans</h1>
+  <script>
+    console.log('It is working!');
+    var yes = true;
+    var no = false;
+    // Bad!!!!!
+    // console.log(yes + no);
+
+    // Boolean operators
+    // Not operators
+    console.log(!yes);
+    //And operator --> && Both have to be true
+    console.log(yes && yes);
+    console.log(yes && no);
+    console.log(no && yes);
+    console.log(no && no);
+    // Or operator --> || If one is true, the whole thing is
+    console.log(yes || yes);
+    console.log(yes || no);
+    console.log(no || yes);
+    console.log(no || no);
+    //Comparative operators: compare values of data
+    //Less than
+    console.log(3 < 5);
+    console.log(5 < 3);
+    //Less than or equal to
+    console.log(3 <= 5);
+    console.log(3 <= 3);
+    console.log(3 < 3);
+    //Greater Than
+    console.log('a' > 'b');
+    console.log('a' < 'b');
+    console.log('c' > 'b');
+    //Greater than or Equal to
+    console.log('c' >= 'b');
+    console.log('a' >= 'b');
+
+    console.log([1, 2] < [2, 1]);
+
+    //Equal to (2)
+    console.log(2 == 2);
+    console.log(2 === 2);
+    console.log('2' == 2); //coerecive/loose equality
+    console.log('2' === 2); //strict equality
+
+    //Not equal to (2)
+    console.log('2' != 3);
+    console.log('2' !== 3);
+    //Uh ohs
+    console.log('' == false);
+    console.log('' === false);
+    console.log(' ' == false);
+    console.log(' ' === false);
+    console.log(' aslkfdj' == false);
+    console.log(' asfdlkj;l' === false);
+
+    var user = ' ';
+    if (user){
+      console.log('found');
+    }
+  </script>
+</body>
+</html>
